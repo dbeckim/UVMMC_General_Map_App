@@ -19,6 +19,43 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var zoomView: UIScrollView!
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBAction func btnPhone(_ sender: Any) {
+        
+        guard let number = URL(string: "telprompt://8028470000") else { return }
+        if #available(iOS 10.0, *) {
+            
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(number)) {
+                let alertController = UIAlertController(title: "Call UVMMC Info Desk?", message: "802-847-0000", preferredStyle: .alert)
+                let yesPressed = UIAlertAction(title: "Yes", style: .default, handler: { (action) in
+                    UIApplication.shared.open(number)
+                })
+                let noPressed = UIAlertAction(title: "No", style: .default, handler: { (action) in
+                    
+                })
+                alertController.addAction(yesPressed)
+                alertController.addAction(noPressed)
+                present(alertController, animated: true, completion: nil)
+            }
+            
+            
+        } else {
+            
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(number)) {
+                let alertController = UIAlertController(title: "Call UVMMC Info Desk?", message: "802-847-0000", preferredStyle: .alert)
+                let yesPressed = UIAlertAction(title: "Yes", style: .default, handler: { (action) in
+                    UIApplication.shared.openURL(number)
+                })
+                let noPressed = UIAlertAction(title: "No", style: .default, handler: { (action) in
+                    
+                })
+                alertController.addAction(yesPressed)
+                alertController.addAction(noPressed)
+                present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
     
     //MARK: Actions
     override func viewDidLoad() {

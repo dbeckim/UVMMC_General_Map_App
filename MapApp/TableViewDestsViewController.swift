@@ -13,6 +13,47 @@ class TableViewDestsViewController: UITableViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    @IBAction func btnPhone(_ sender: Any) {
+    
+        //
+        
+        guard let number = URL(string: "telprompt://8028470000") else { return }
+        if #available(iOS 10.0, *) {
+            
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(number)) {
+                let alertController = UIAlertController(title: "Call UVMMC Info Desk?", message: "802-847-0000", preferredStyle: .alert)
+                let yesPressed = UIAlertAction(title: "Yes", style: .default, handler: { (action) in
+                    UIApplication.shared.open(number)
+                })
+                let noPressed = UIAlertAction(title: "No", style: .default, handler: { (action) in
+                    
+                })
+                alertController.addAction(yesPressed)
+                alertController.addAction(noPressed)
+                present(alertController, animated: true, completion: nil)
+            }
+            
+            
+        } else {
+            
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(number)) {
+                let alertController = UIAlertController(title: "Call UVMMC Info Desk?", message: "802-847-0000", preferredStyle: .alert)
+                let yesPressed = UIAlertAction(title: "Yes", style: .default, handler: { (action) in
+                    UIApplication.shared.openURL(number)
+                })
+                let noPressed = UIAlertAction(title: "No", style: .default, handler: { (action) in
+                    
+                })
+                alertController.addAction(yesPressed)
+                alertController.addAction(noPressed)
+                present(alertController, animated: true, completion: nil)
+            }
+        }
+        
+    }
+    
     @IBAction func controllerChanged(_ sender: Any) {
         tableView.reloadData()
 
@@ -25,7 +66,7 @@ class TableViewDestsViewController: UITableViewController {
         var sectionObjects : [String]!
     }
     
-    //  All A - Z
+    //  All A - Z /////////////////////////////////////////////////////////
     
     let objectsArray1 = [Objects(sectionName: "A-Z", sectionObjects: [
         "Anesthesiology",
@@ -92,7 +133,8 @@ class TableViewDestsViewController: UITableViewController {
     
     
     
-    // All - By Floor
+    // All - By Floor /////////////////////////////////////////////////////////
+    
     let objectsArray2 = [Objects(sectionName: "Level L", sectionObjects: [
         
         "Harvest Cafe",
@@ -179,7 +221,8 @@ class TableViewDestsViewController: UITableViewController {
     
     
     
-    // Dining
+    // Dining /////////////////////////////////////////////////////////
+    
     let objectsArray3 = [Objects(sectionName: "Level L", sectionObjects: ["Harvest Cafe"]),
                          
                          Objects(sectionName: "Level 2", sectionObjects: ["Cafe Express"]),
@@ -229,6 +272,7 @@ class TableViewDestsViewController: UITableViewController {
             cell?.textLabel?.text = objectsArray1[indexPath.section].sectionObjects[indexPath.row]
             curr_section = 1
             
+            // setting colors
             if cell?.textLabel?.text == "Harvest Cafe" || cell?.textLabel?.text == "Cafe Express"
                 || cell?.textLabel?.text == "Garden Atrium" || cell?.textLabel?.text == "Main Street Cafe"{
                 
@@ -284,6 +328,7 @@ class TableViewDestsViewController: UITableViewController {
 
         return cell!
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         

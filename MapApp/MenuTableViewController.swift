@@ -28,10 +28,20 @@ class MenuTableViewController: UITableViewController {
     }
     
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
-    {
-        return 50.0;//Choose your custom row height
-    }
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+//    {
+//        return 50.0;//Choose your custom row height
+//    }
+    
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let v = UIView()
+//        let segmentedControl = UISegmentedControl(frame: CGRect(x: 10, y: 5, width: tableView.frame.width - 20, height: 30))
+//        segmentedControl.insertSegment(withTitle: "One", at: 0, animated: false)
+//        segmentedControl.insertSegment(withTitle: "Two", at: 1, animated: false)
+//        segmentedControl.insertSegment(withTitle: "Three", at: 2, animated: false)
+//        v.addSubview(segmentedControl)
+//        return v
+//    }
     
 
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -57,6 +67,10 @@ class MenuTableViewController: UITableViewController {
         }
     
     }
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt  indexPath: IndexPath) {
+//        <#code#>
+//    }
     
 
     /*
