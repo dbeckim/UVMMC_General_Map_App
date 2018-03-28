@@ -70,7 +70,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.zoomView.minimumZoomScale = 1.0
         self.zoomView.maximumZoomScale = 6.0
         
-        photoImageView.image = UIImage(named: "Campus");
+        photoImageView.image = UIImage(named: "campus");
         
         
     }

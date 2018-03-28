@@ -60,7 +60,6 @@ class WebResViewController: UIViewController {
         }
     }
     @IBOutlet weak var webView: UIWebView!
- //   var url:URL!
     
     var url = URL(string:"https://www.uvmhealth.org/medcenter/pages/default.aspx")
 

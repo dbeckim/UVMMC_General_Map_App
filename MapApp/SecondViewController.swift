@@ -195,12 +195,9 @@ class SecondViewController: UIViewController, UIScrollViewDelegate {
     }
 
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-    }
+
     
     override func viewDidLoad() {
-        
         
         
         if !multi_2.contains(MyString){
@@ -268,13 +265,10 @@ class SecondViewController: UIViewController, UIScrollViewDelegate {
         
         navigationItem.title = MyString
     
-
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func viewForZooming(in zoomView: UIScrollView) -> UIView?
