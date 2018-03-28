@@ -1044,10 +1044,10 @@
             </objects>
             <point key="canvasLocation" x="-1454" y="-1091"/>
         </scene>
-        <!--Web Res3 View Controller-->
+        <!--Web Res4 View Controller-->
         <scene sceneID="fdi-DA-VGG">
             <objects>
-                <viewController id="sGh-HM-aLb" customClass="WebRes3ViewController" customModule="MapAppCombined" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sGh-HM-aLb" customClass="WebRes4ViewController" customModule="MapAppCombined" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nr5-lp-22Y"/>
                         <viewControllerLayoutGuide type="bottom" id="eWQ-Ub-l5B"/>

@@ -64,7 +64,7 @@ class WebRes3ViewController: UIViewController {
     }
     @IBOutlet weak var webView: UIWebView!
     
-    var url = URL(string:"https://follow.uvmmedcenter.org/OR/Lookup")
+    var url = URL(string:"https://www.uvmhealth.org/medcenter/pages/departments-and-programs/dining-services/menus-and-dining-locations.aspx")
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     override func viewDidLoad() {

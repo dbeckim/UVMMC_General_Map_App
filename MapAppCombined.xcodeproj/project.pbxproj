@@ -17,6 +17,7 @@
 		356AFB3B1FB4FD8E0043206F /* WebResViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AFB3A1FB4FD8E0043206F /* WebResViewController.swift */; };
 		356AFB3D1FBB72B10043206F /* WebRes2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AFB3C1FBB72B10043206F /* WebRes2ViewController.swift */; };
 		356AFB3F1FBB76AD0043206F /* WebRes3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356AFB3E1FBB76AD0043206F /* WebRes3ViewController.swift */; };
+		35A2A999206C36EC00BD4A06 /* WebRes4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2A998206C36EC00BD4A06 /* WebRes4ViewController.swift */; };
 		5207C3E71F263FE1002924E8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207C3E61F263FE1002924E8 /* SecondViewController.swift */; };
 		521A15D61F1E961300FA2B50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A15D51F1E961300FA2B50 /* AppDelegate.swift */; };
 		521A15D81F1E961300FA2B50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A15D71F1E961300FA2B50 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		356AFB3A1FB4FD8E0043206F /* WebResViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebResViewController.swift; sourceTree = "<group>"; };
 		356AFB3C1FBB72B10043206F /* WebRes2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRes2ViewController.swift; sourceTree = "<group>"; };
 		356AFB3E1FBB76AD0043206F /* WebRes3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRes3ViewController.swift; sourceTree = "<group>"; };
+		35A2A998206C36EC00BD4A06 /* WebRes4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRes4ViewController.swift; sourceTree = "<group>"; };
 		5207C3E61F263FE1002924E8 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		521A15D21F1E961300FA2B50 /* MapAppCombined.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapAppCombined.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521A15D51F1E961300FA2B50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				35161B861F748EF500D80564 /* TableViewDestsViewController.swift */,
 				350826341F967DD800A61774 /* EntryViewController.swift */,
 				35379DF51F38D0140060ABB4 /* Assets.xcassets */,
+				35A2A998206C36EC00BD4A06 /* WebRes4ViewController.swift */,
 				521A15D91F1E961300FA2B50 /* Main.storyboard */,
 				521A15E11F1E961300FA2B50 /* Info.plist */,
 				355634FE1F2B96C700CCD3FF /* PopUpViewController.swift */,
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A2A999206C36EC00BD4A06 /* WebRes4ViewController.swift in Sources */,
 				356AFB351FB4C9050043206F /* SWRevealViewController.m in Sources */,
 				355634FF1F2B96C700CCD3FF /* PopUpViewController.swift in Sources */,
 				5207C3E71F263FE1002924E8 /* SecondViewController.swift in Sources */,
